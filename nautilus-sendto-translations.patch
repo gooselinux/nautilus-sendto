@@ -1,0 +1,1972 @@
+diff -urN a/po/fr.po b/po/fr.po
+--- a/po/fr.po	2010-05-06 14:40:22.086029607 +0530
++++ b/po/fr.po	2010-05-06 14:41:21.208154495 +0530
+@@ -1,23 +1,26 @@
++# translation of fr.po to French
+ # French translation of nautilus-sendto
+-# Copyright (C) 2004-2009 Free Software Foundation, Inc.
++# Copyright (C) 2004-2009, 2010 Free Software Foundation, Inc.
+ # This file is distributed under the GNU General Public License Version 2.
+ #
++#
+ # Jean-Michel Ardantz <jmardantz@ifrance.com>, 2004.
+ # Christophe Bliard <christophe.bliard@trux.info>, 2006.
+ # Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+ # Claude Paroz <claude@2xlibre.net>, 2007-2009.
+-#
++# Sam Friedmann <sam.friedmann@redhat.com>, 2010.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: nautilus-sendto HEAD\n"
++"Project-Id-Version: fr\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2009-02-27 09:00+0100\n"
+-"PO-Revision-Date: 2009-02-27 09:04+0100\n"
+-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+-"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
++"POT-Creation-Date: 2010-03-29 14:37+0530\n"
++"PO-Revision-Date: 2010-04-15 14:19+1000\n"
++"Last-Translator: Sam Friedmann <sam.friedmann@redhat.com>\n"
++"Language-Team: French <French fedora-trans-fr@fedoraproject.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../nst.schemas.in.h:1
+ msgid "Last plugin used to send"
+@@ -56,32 +59,8 @@
+ msgid "Send to..."
+ msgstr "Envoyer à..."
+ 
+-#. type
+-#. ui requirement
+-#. flags
+-#. dependencies
+-#. priority
+-#. id
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:309
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:332
+-msgid "Nautilus Integration"
+-msgstr "Intégration à Nautilus"
+-
+-#. name
+-#. version
+-#. summary
+-#. name
+-#. version
+-#. summary
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:311
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:312
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:334
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:335
+-msgid "Provides integration with Nautilus"
+-msgstr "Permet une intégration à Nautilus"
+-
+ #: ../src/nautilus-nste.c:92 ../src/nautilus-nste.c:97
+-#: ../src/nautilus-sendto.glade.h:3
++#: ../src/nautilus-sendto.ui.h:3
+ msgid "Send To..."
+ msgstr "Envoyer à..."
+ 
+@@ -93,83 +72,86 @@
+ msgid "Send files by mail, instant message..."
+ msgstr "Envoyer les fichiers par courriel, messagerie instantanée..."
+ 
+-#: ../src/nautilus-sendto-command.c:533
++#: ../src/nautilus-sendto-command.c:547
+ msgid "Files"
+ msgstr "Fichiers"
+ 
+-#: ../src/nautilus-sendto-command.c:737
++#: ../src/nautilus-sendto-command.c:760
+ #, c-format
+ msgid "Expects URIs or filenames to be passed as options\n"
+ msgstr "Les options attendues sont des URI ou des noms de fichiers\n"
+ 
+-#: ../src/nautilus-sendto-command.c:754
++#: ../src/nautilus-sendto-command.c:777
+ msgid "Nautilus Sendto"
+ msgstr "Nautilus Sendto"
+ 
+-#: ../src/nautilus-sendto-command.c:758
++#: ../src/nautilus-sendto-command.c:781
+ #, c-format
+ msgid "Could not parse command-line options: %s\n"
+ msgstr "Impossible d'analyser les options de la ligne de commande : %s\n"
+ 
+-#: ../src/nautilus-sendto-command.c:773
++#: ../src/nautilus-sendto-command.c:796
+ msgid "Could not load any plugins."
+ msgstr "Impossible de charger un greffon."
+ 
+-#: ../src/nautilus-sendto-command.c:776
++#: ../src/nautilus-sendto-command.c:799
+ msgid "Please verify your installation"
+ msgstr "Veuillez contrôler votre installation"
+ 
+-#: ../src/nautilus-sendto.glade.h:1
++#: ../src/nautilus-sendto.ui.h:1
+ msgid "<b>Compression</b>"
+ msgstr "<b>Compression</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:2
++#: ../src/nautilus-sendto.ui.h:2
+ msgid "<b>Destination</b>"
+ msgstr "<b>Destination</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:4
++#: ../src/nautilus-sendto.ui.h:4
+ msgid "Send _as:"
+ msgstr "Envoyer _par :"
+ 
+-#: ../src/nautilus-sendto.glade.h:5
++#: ../src/nautilus-sendto.ui.h:5
+ msgid "Send _packed in:"
+ msgstr "Envoyer une copie _compressée dans :"
+ 
+-#: ../src/nautilus-sendto.glade.h:6
++#: ../src/nautilus-sendto.ui.h:6
+ msgid "Send t_o:"
+ msgstr "_Destinataire :"
+ 
+-#: ../src/nautilus-sendto.glade.h:7
++#: ../src/nautilus-sendto.ui.h:7
+ msgid "_Send"
+ msgstr "_Envoyer"
+ 
+-#: ../src/plugins/bluetooth/bluetooth.c:445
++#: ../src/plugins/bluetooth/bluetooth.c:448
+ msgid "Programming error, could not find the device in the list"
+-msgstr ""
+-"Erreur de programmation, impossible de trouver le périphérique dans la liste"
++msgstr "Erreur de programmation, impossible de trouver le périphérique dans la liste"
+ 
+-#: ../src/plugins/bluetooth/bluetooth.c:520
++#: ../src/plugins/bluetooth/bluetooth.c:523
+ #, c-format
+ msgid "Obex Push file transfer unsupported"
+ msgstr "Le transfert de fichier Obex Push n'est pas pris en charge"
+ 
+-#: ../src/plugins/bluetooth/bluetooth.c:544
++#: ../src/plugins/bluetooth/bluetooth.c:547
+ msgid "Bluetooth (OBEX Push)"
+ msgstr "Bluetooth (OBEX Push)"
+ 
+-#: ../src/plugins/empathy/empathy.c:128
++#: ../src/plugins/empathy/empathy.c:144
+ msgid "The contact selected cannot receive files."
+ msgstr "Le contact sélectionné ne peut pas recevoir de fichiers."
+ 
+-#: ../src/plugins/empathy/empathy.c:134
++#: ../src/plugins/empathy/empathy.c:150
+ msgid "The contact selected is offline."
+ msgstr "Le contact sélectionné est hors ligne."
+ 
+-#: ../src/plugins/empathy/empathy.c:187
++#: ../src/plugins/empathy/empathy.c:205
++msgid "No error message"
++msgstr "Aucun message d'erreur"
++
++#: ../src/plugins/empathy/empathy.c:281
+ msgid "Instant Message (Empathy)"
+ msgstr "Messagerie instantanée (Empathy)"
+ 
+-#: ../src/plugins/evolution/evolution.c:367
++#: ../src/plugins/evolution/evolution.c:369
+ msgid "Email"
+ msgstr "Courrier électronique"
+ 
+@@ -248,8 +230,7 @@
+ msgstr "L'authentification au carnet d'adresses a échoué."
+ 
+ #: ../src/plugins/evolution/e-contact-entry.c:913
+-msgid ""
+-"Authentication is required to access the address book and was not given."
++msgid "Authentication is required to access the address book and was not given."
+ msgstr ""
+ "Ce carnet d'adresses exige une authentification et vous ne l'avez pas "
+ "fournie."
+@@ -271,55 +252,51 @@
+ msgid "An unknown error occurred."
+ msgstr "Une erreur inconnue s'est produite."
+ 
+-#: ../src/plugins/gaim/gaim.c:228
+-msgid "Instant Message (Gaim)"
+-msgstr "Messagerie instantanée (Gaim)"
+-
+-#: ../src/plugins/gajim/gajim.c:402
++#: ../src/plugins/gajim/gajim.c:417
+ msgid "Unable to send file"
+ msgstr "Impossible d'envoyer le fichier"
+ 
+-#: ../src/plugins/gajim/gajim.c:403
++#: ../src/plugins/gajim/gajim.c:418
+ msgid "There is no connection to gajim remote service."
+ msgstr "Il n'y a pas de connexion au service à distance de Gajim."
+ 
+-#: ../src/plugins/gajim/gajim.c:427 ../src/plugins/gajim/gajim.c:466
++#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
+ msgid "Sending file failed"
+ msgstr "L'envoi du fichier a échoué"
+ 
+-#: ../src/plugins/gajim/gajim.c:428
++#: ../src/plugins/gajim/gajim.c:443
+ msgid "Recipient is missing."
+ msgstr "Le destinataire est manquant."
+ 
+-#: ../src/plugins/gajim/gajim.c:466
++#: ../src/plugins/gajim/gajim.c:482
+ msgid "Unknown recipient."
+ msgstr "Destinataire inconnu."
+ 
+-#: ../src/plugins/gajim/gajim.c:488
++#: ../src/plugins/gajim/gajim.c:505
+ msgid "Instant Message (Gajim)"
+ msgstr "Messagerie instantanée (Gajim)"
+ 
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:70
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:85
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:92
+ msgid "New CD/DVD"
+ msgstr "Nouveau CD/DVD"
+ 
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:83
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:99
+ msgid "Existing CD/DVD"
+ msgstr "CD/DVD existant"
+ 
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:162
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:178
+ msgid "CD/DVD Creator"
+ msgstr "Créateur de CD/DVD"
+ 
+-#: ../src/plugins/pidgin/pidgin.c:350
++#: ../src/plugins/pidgin/pidgin.c:464
+ msgid "Instant Message (Pidgin)"
+ msgstr "Messagerie instantanée (Pidgin)"
+ 
+-#: ../src/plugins/removable-devices/removable-devices.c:219
++#: ../src/plugins/removable-devices/removable-devices.c:224
+ msgid "Removable disks and shares"
+ msgstr "Partages et disques amovibles"
+ 
+-#: ../src/plugins/upnp/upnp.c:298
++#: ../src/plugins/upnp/upnp.c:309
+ msgid "UPnP Media Server"
+ msgstr "Serveur média UPnP"
++
+diff -urN a/po/ko.po b/po/ko.po
+--- a/po/ko.po	2010-05-06 14:40:22.091029403 +0530
++++ b/po/ko.po	2010-05-06 14:41:23.062154653 +0530
+@@ -1,21 +1,23 @@
++# translation of nautilus-sendto.po to Korean
+ # GNOME Korea translation of nautilus-sendto.
+ # Copyright (C) 2007 THE nautilus-sendto'S COPYRIGHT HOLDER
+ # This file is distributed under the same license as the nautilus-sendto package.
+ # Young-Ho Cha <ganadist at mizi.com>, 2007.
+ # Namhyung Kim <namhyung@gmail.com>, 2007.
+-# 
+-# 
++#
++#
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: nautilus-sendto\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2007-11-16 20:04+0000\n"
+-"PO-Revision-Date: 2007-12-31 15:06+0900\n"
+-"Last-Translator: Namhyung Kim <namhyung@gmail.com>\n"
+-"Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
++"POT-Creation-Date: 2010-03-29 14:37+0530\n"
++"PO-Revision-Date: 2010-04-18 23:25+1000\n"
++"Last-Translator: \n"
++"Language-Team: Korean <en@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+-"Content-Transfer-Encoding: 8bit"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../nst.schemas.in.h:1
+ msgid "Last plugin used to send"
+@@ -29,193 +31,265 @@
+ msgid ""
+ "Used to store which plugin was used the last time files were sent using "
+ "nautilus-sendto."
+-msgstr ""
+-"이전에 노틸러스 보내기를 통해 파일에 사용된 플러그인을 저장할 때 사용."
++msgstr "이전에 노틸러스 보내기를 통해 파일에 사용된 플러그인을 저장할 때 사용."
+ 
+ #: ../nst.schemas.in.h:4
+ msgid ""
+ "Used to store which type of archive was used the last time (0: zip, 1: tar."
+ "gz, 2: tar.bz2)."
+ msgstr ""
+-"이전에 사용한 압축 파일의 형식을 저장할 때 사용 (0: zip, 1: tar.gz, 2: tar.bz2)."
++"이전에 사용한 압축 파일의 형식을 저장할 때 사용 (0: zip, 1: tar.gz, 2: tar."
++"bz2)."
+ 
+-#. type
+-#. ui requirement
+-#. flags
+-#. dependencies
+-#. priority
+-#. id
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:308
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:308
+-msgid "Nautilus Integration"
+-msgstr "노틸러스 연동"
+-
+-#. name
+-#. version
+-#. summary
+-#. name
+-#. version
+-#. summary
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:310
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:311
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:310
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:311
+-msgid "Provides integration with Nautilus"
+-msgstr "노틸러스와 연동되도록 합니다"
++#: ../evolution/nautilus-sendto.c:47
++msgid "_Send to..."
++msgstr "보내기(_S)..."
++
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:1
++msgid "Send files to remote devices, or people"
++msgstr "원격 장치나 사람에게 파일을 전송합니다"
+ 
+-#: ../src/nautilus-nste.c:95 ../src/nautilus-nste.c:100
++#. the path to the shared library
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:3
+ msgid "Send to..."
+ msgstr "보내기..."
+ 
+-#: ../src/nautilus-nste.c:96
++#: ../src/nautilus-nste.c:92 ../src/nautilus-nste.c:97
++#: ../src/nautilus-sendto.ui.h:3
++msgid "Send To..."
++msgstr "보내기..."
++
++#: ../src/nautilus-nste.c:93
+ msgid "Send file by mail, instant message..."
+ msgstr "전자메일, 즉석 메시지로 파일 보내기..."
+ 
+-#: ../src/nautilus-nste.c:101
++#: ../src/nautilus-nste.c:98
+ msgid "Send files by mail, instant message..."
+ msgstr "전자메일, 즉석 메시지로 파일 보내기..."
+ 
+-#: ../src/nautilus-sendto-command.c:73
+-msgid "Default folder to use"
+-msgstr "사용할 기본 폴더"
+-
+-#: ../src/nautilus-sendto-command.c:248
+-msgid "You don't insert the package name"
+-msgstr "꾸러미 이름을 넣을 수 없습니다"
+-
+-#: ../src/nautilus-sendto-command.c:509
++#: ../src/nautilus-sendto-command.c:547
+ msgid "Files"
+ msgstr "파일"
+ 
+-#: ../src/nautilus-sendto-command.c:699
++#: ../src/nautilus-sendto-command.c:760
++#, c-format
+ msgid "Expects URIs or filenames to be passed as options\n"
+ msgstr "옵션으로 URI 또는 파일 이름이 전달될 것으로 예상\n"
+ 
+-#: ../src/nautilus-sendto-command.c:716
++#: ../src/nautilus-sendto-command.c:777
+ msgid "Nautilus Sendto"
+ msgstr "노틸러스 보내기"
+ 
+-#: ../src/nautilus-sendto-command.c:720
++#: ../src/nautilus-sendto-command.c:781
+ #, c-format
+ msgid "Could not parse command-line options: %s\n"
+ msgstr "명령행 옵션을 분석할 수 없음: %s\n"
+ 
+-#: ../src/nautilus-sendto-command.c:735
++#: ../src/nautilus-sendto-command.c:796
+ msgid "Could not load any plugins."
+ msgstr "아무 플러그인도 불러올 수 없음."
+ 
+-#: ../src/nautilus-sendto-command.c:738
++#: ../src/nautilus-sendto-command.c:799
+ msgid "Please verify your installation"
+ msgstr "설치 상태를 확인하십시오"
+ 
+-#: ../src/nautilus-sendto.glade.h:1
++#: ../src/nautilus-sendto.ui.h:1
+ msgid "<b>Compression</b>"
+ msgstr "<b>압축</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:2
++#: ../src/nautilus-sendto.ui.h:2
+ msgid "<b>Destination</b>"
+ msgstr "<b>대상</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:3
+-msgid "Send To..."
+-msgstr "보내기..."
+-
+-#: ../src/nautilus-sendto.glade.h:4
++#: ../src/nautilus-sendto.ui.h:4
+ msgid "Send _as:"
+ msgstr "보낼 방법(_A):"
+ 
+-#: ../src/nautilus-sendto.glade.h:5
++#: ../src/nautilus-sendto.ui.h:5
++msgid "Send _packed in:"
++msgstr "묶어서 보내기(_S):"
++
++#: ../src/nautilus-sendto.ui.h:6
+ msgid "Send t_o:"
+ msgstr "받을 사람(_O):"
+ 
+-#: ../src/nautilus-sendto.glade.h:6
++#: ../src/nautilus-sendto.ui.h:7
+ msgid "_Send"
+ msgstr "보내기(_S)"
+ 
+-#: ../src/nautilus-sendto.glade.h:7
+-msgid "_Send packed in:"
+-msgstr "묶어서 보내기(_S):"
+-
+-#: ../src/plugins/balsa.c:103
+-msgid "Email (Balsa)"
+-msgstr "전자메일 (Balsa)"
+-
+-#: ../src/plugins/bluetooth.c:421
++#: ../src/plugins/bluetooth/bluetooth.c:448
+ msgid "Programming error, could not find the device in the list"
+ msgstr "프로그래밍 오류, 목록에서 장치를 찾을 수 없음"
+ 
+-#: ../src/plugins/bluetooth.c:442
+-msgid "Device does not support Obex File Transfer"
+-msgstr "장치가 Obex 파일 전송을 지원하지 않음"
++#: ../src/plugins/bluetooth/bluetooth.c:523
++#, c-format
++msgid "Obex Push file transfer unsupported"
++msgstr "Obex 푸시 파일 전송은 지원하지 않습니다"
+ 
+-#: ../src/plugins/bluetooth.c:457
++#: ../src/plugins/bluetooth/bluetooth.c:547
+ msgid "Bluetooth (OBEX Push)"
+ msgstr "블루투스 (OBEX Push)"
+ 
+-#: ../src/plugins/evolution.c:273
++#: ../src/plugins/empathy/empathy.c:144
++msgid "The contact selected cannot receive files."
++msgstr "선택한 연락처로는 파일을 전송할 수 없습니다"
++
++#: ../src/plugins/empathy/empathy.c:150
++msgid "The contact selected is offline."
++msgstr "선택한 연락처는 오프라인입니다."
++
++#: ../src/plugins/empathy/empathy.c:205
++msgid "No error message"
++msgstr "오류 메시지 없음"
++
++#: ../src/plugins/empathy/empathy.c:281
++msgid "Instant Message (Empathy)"
++msgstr "즉석 메세지 (Empathy)"
++
++#: ../src/plugins/evolution/evolution.c:369
+ msgid "Email"
+ msgstr "전자우편"
+ 
+-#: ../src/plugins/gaim.c:228
+-msgid "Instant Message (Gaim)"
+-msgstr "즉석 메세지 (Gaim)"
++#: ../src/plugins/evolution/e-contact-entry.c:152
++#, c-format
++msgid "Cannot get contact: %s"
++msgstr "연락처를 얻을 수 없음: %s"
+ 
+-#: ../src/plugins/gajim.c:402
++#: ../src/plugins/evolution/e-contact-entry.c:185
++#, c-format
++msgid "Could not find contact: %s"
++msgstr "연락처를 찾을 수 없음: %s"
++
++#: ../src/plugins/evolution/e-contact-entry.c:411
++msgid "Cannot create searchable view."
++msgstr "찾을 수 있는 뷰를 만들 수 없습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:883
++msgid "Success"
++msgstr "성공"
++
++#: ../src/plugins/evolution/e-contact-entry.c:885
++msgid "An argument was invalid."
++msgstr "인자가 올바르지 않습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:887
++msgid "The address book is busy."
++msgstr "주소록이 현재 사용중입니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:889
++msgid "The address book is offline."
++msgstr "주소록이 오프라인입니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:891
++msgid "The address book does not exist."
++msgstr "주소록이 존재하지 않습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:893
++msgid "The \"Me\" contact does not exist."
++msgstr "\"Me\" 연락처가 존재하지 않습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:895
++msgid "The address book is not loaded."
++msgstr "주소록이 적제되어 있지 않습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:897
++msgid "The address book is already loaded."
++msgstr "주소록이 이미 적재되어 있습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:899
++msgid "Permission was denied when accessing the address book."
++msgstr "주소록을 억세스하는 동안 권한이 거부되었습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:901
++msgid "The contact was not found."
++msgstr "연락처를 찾지 못했습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:903
++msgid "This contact ID already exists."
++msgstr "해당 연락처 ID가 이미 존재합니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:905
++msgid "The protocol is not supported."
++msgstr "해당 프로토콜을 지원하지 않습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:907
++msgid "The operation was cancelled."
++msgstr "동작이 취소되었습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:909
++msgid "The operation could not be cancelled."
++msgstr "동작을 취소할 수 없습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:911
++msgid "The address book authentication failed."
++msgstr "주소록 인증이 실패했습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:913
++msgid "Authentication is required to access the address book and was not given."
++msgstr "주소록을 억세스하기 위해서는 인증이 필요하지만, 관련 정보를 제공하지 않았습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:915
++msgid "A secure connection is not available."
++msgstr "보안 연결을 사용할 수 없습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:917
++msgid "A CORBA error occurred whilst accessing the address book."
++msgstr "주소록 억세스 중 CORBA 오류가 발생했습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:919
++msgid "The address book source does not exist."
++msgstr "주소록 소스가 존재하지 않습니다."
++
++#: ../src/plugins/evolution/e-contact-entry.c:921
++#: ../src/plugins/evolution/e-contact-entry.c:924
++msgid "An unknown error occurred."
++msgstr "알려지지 않은 오류가 발생했습니다."
++
++#: ../src/plugins/gajim/gajim.c:417
+ msgid "Unable to send file"
+ msgstr "파일을 보낼 수 없음"
+ 
+-#: ../src/plugins/gajim.c:403
++#: ../src/plugins/gajim/gajim.c:418
+ msgid "There is no connection to gajim remote service."
+ msgstr "gajim 원격 서비스와 연결되지 않음."
+ 
+-#: ../src/plugins/gajim.c:427 ../src/plugins/gajim.c:466
++#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
+ msgid "Sending file failed"
+ msgstr "파일 보내기 실패"
+ 
+-#: ../src/plugins/gajim.c:428
++#: ../src/plugins/gajim/gajim.c:443
+ msgid "Recipient is missing."
+ msgstr "수신자가 없음."
+ 
+-#: ../src/plugins/gajim.c:466
++#: ../src/plugins/gajim/gajim.c:482
+ msgid "Unknown recipient."
+ msgstr "알 수 없는 수신자."
+ 
+-#: ../src/plugins/gajim.c:488
++#: ../src/plugins/gajim/gajim.c:505
+ msgid "Instant Message (Gajim)"
+ msgstr "즉석 메세지 (Gajim)"
+ 
+-#: ../src/plugins/pidgin.c:228
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:92
++msgid "New CD/DVD"
++msgstr "새 CD/DVD"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:99
++msgid "Existing CD/DVD"
++msgstr "기존 CD/DVD"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:178
++msgid "CD/DVD Creator"
++msgstr "CD/DVD 작성 프로그램"
++
++#: ../src/plugins/pidgin/pidgin.c:464
+ msgid "Instant Message (Pidgin)"
+ msgstr "즉석 메세지 (Pidgin)"
+ 
+-#: ../src/plugins/sylpheed-claws.c:131
+-msgid "Email (Claws Mail)"
+-msgstr "전자메일 (Claws Mail)"
+-
+-#: ../src/plugins/thunderbird.c:102
+-msgid "Email (Thunderbird)"
+-msgstr "전자메일 (Thunderbird)"
+-
+-#~ msgid "FOLDER"
+-#~ msgstr "폴더"
+-
+-#~ msgid ""
+-#~ ".zip\n"
+-#~ ".tar.gz\n"
+-#~ ".tar.bz2"
+-#~ msgstr ""
+-#~ ".zip\n"
+-#~ ".tar.gz\n"
+-#~ ".tar.bz2"
+-
+-#~ msgid "*"
+-#~ msgstr "*"
+-
+-#~ msgid "Nautilus Sendto component"
+-#~ msgstr "노틸러스 보내기 컴포넌트"
+-
+-#~ msgid "Sendo To..."
+-#~ msgstr "보내기..."
++#: ../src/plugins/removable-devices/removable-devices.c:224
++msgid "Removable disks and shares"
++msgstr "이동가능한 디스크와 공유"
++
++#: ../src/plugins/upnp/upnp.c:309
++msgid "UPnP Media Server"
++msgstr "UPnP 미디어 서버"
+ 
+-#~ msgid "You don't insert any email address"
+-#~ msgstr "전자우편 주소를 넣을 수 없습니다"
+diff -urN a/po/LINGUAS b/po/LINGUAS
+--- a/po/LINGUAS	2010-05-06 14:40:22.094029824 +0530
++++ b/po/LINGUAS	2010-05-06 14:41:35.239058622 +0530
+@@ -31,6 +31,7 @@
+ ko
+ lt
+ mk
++ml
+ mr
+ nb
+ ne
+diff -urN a/po/ml.po b/po/ml.po
+--- a/po/ml.po	1970-01-01 05:30:00.000000000 +0530
++++ b/po/ml.po	2010-05-06 14:41:18.559033286 +0530
+@@ -0,0 +1,296 @@
++# translation of new.po to
++# Malyalam translation of nautilus-sendto.
++# Copyright (C) 2009-2010 nautilus-sendto'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the nautilus-sendto package.
++# jeevz <jeevanism@gmail.com>, 2009.
++# Labeeb Elbiem <mmlabeeb@gmail.com>, 2010.
++# Reviewed by Praveen Arimbrathodiyil <pravi.a@gmail.com>, 2010.
++msgid ""
++msgstr ""
++"Project-Id-Version: new\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:37+0530\n"
++"PO-Revision-Date: 2010-04-09 11:10+0530\n"
++"Last-Translator: \n"
++"Language-Team:  <en@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 1.11.4\n"
++
++#: ../nst.schemas.in.h:1
++msgid "Last plugin used to send"
++msgstr "അവസാനമായി അയയ്ക്കാന്‍ ഉപയോഗിച്ച സംയോജകം"
++
++#: ../nst.schemas.in.h:2
++msgid "Last type of archive used"
++msgstr "അവസാനമായി ഉപയോഗിച്ച ശേഖരത്തിന്റെ തരം"
++
++#: ../nst.schemas.in.h:3
++msgid ""
++"Used to store which plugin was used the last time files were sent using "
++"nautilus-sendto."
++msgstr ""
++"നോട്ടിലസ്-സെന്‍ഡ്ടു ഉപയോഗിച്ച് കഴിഞ്ഞ പ്രാവശ്യം ഫയലുകള്‍ അയച്ചപ്പോള്‍ ഉപയോഗിച്ച സംയോജകം "
++"ഏതാണെന്നു് ഓര്‍ത്തുവെക്കാന്‍ ഉപയോഗിച്ചിരിക്കുന്നു."
++
++#: ../nst.schemas.in.h:4
++msgid ""
++"Used to store which type of archive was used the last time (0: zip, 1: tar."
++"gz, 2: tar.bz2)."
++msgstr ""
++"കഴിഞ്ഞ പ്രാവശ്യം ഏതു തരം  ഫയല്‍ ചുരുക്കല്‍ സംവിധാനമാണ് ഉപയോഗിച്ചതെന്ന് ഓര്‍ത്തുവെച്ചിരിക്കുന്നു (0: "
++"zip, 1: tar.gz, 2: tar.bz2)."
++
++#: ../evolution/nautilus-sendto.c:47
++msgid "_Send to..."
++msgstr "_അയക്കേണ്ടതു്..."
++
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:1
++msgid "Send files to remote devices, or people"
++msgstr "ഫയലുകള്‍ ദൂരെയുള്ള ഉപകരണങ്ങളിലേയ്ക്കോ ആളുകള്‍ക്കോ അയയ്ക്കുക"
++
++#. the path to the shared library
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:3
++msgid "Send to..."
++msgstr "അയയ്ക്കേണ്ടതു്... "
++
++#: ../src/nautilus-nste.c:92 ../src/nautilus-nste.c:97
++#: ../src/nautilus-sendto.ui.h:3
++msgid "Send To..."
++msgstr "അയയ്ക്കേണ്ടതു്... "
++
++#: ../src/nautilus-nste.c:93
++msgid "Send file by mail, instant message..."
++msgstr "കത്തായിട്ടോ നിമിഷ സന്ദേശമായിട്ടോ ഫയല്‍ അയയ്ക്കുക..."
++
++#: ../src/nautilus-nste.c:98
++msgid "Send files by mail, instant message..."
++msgstr "കത്തായിട്ടോ നിമിഷ സന്ദേശമായിട്ടോ ഫയലുകള്‍ അയയ്ക്കുക..."
++
++#: ../src/nautilus-sendto-command.c:547
++msgid "Files"
++msgstr "ഫയലുകള്‍"
++
++#: ../src/nautilus-sendto-command.c:760
++#, c-format
++msgid "Expects URIs or filenames to be passed as options\n"
++msgstr "യുആര്‍ഐകളോ ഫയല്‍നാമങ്ങളോ ഐച്ഛികങ്ങളായി നല്‍കാന്‍ പ്രതീക്ഷിക്കുന്നു\n"
++
++#: ../src/nautilus-sendto-command.c:777
++msgid "Nautilus Sendto"
++msgstr "നോട്ടിലസ് സെന്‍ഡ്ടു"
++
++#: ../src/nautilus-sendto-command.c:781
++#, c-format
++msgid "Could not parse command-line options: %s\n"
++msgstr "ആജ്ഞാസ്ഥാനത്തു് നല്‍കിയ ഐച്ഛികങ്ങള്‍ വായിച്ചെടുക്കാന്‍ സാധിച്ചില്ല: %s\n"
++
++#: ../src/nautilus-sendto-command.c:796
++msgid "Could not load any plugins."
++msgstr "ഒരു സംയോജകങ്ങളും തുറക്കാന്‍ സാധിച്ചില്ല."
++
++#: ../src/nautilus-sendto-command.c:799
++msgid "Please verify your installation"
++msgstr "നിങ്ങളുടെ ഇന്‍സ്റ്റലേഷന്‍ ശരിയാണോ എന്നു് ഉറപ്പു വരുത്തുക"
++
++#: ../src/nautilus-sendto.ui.h:1
++msgid "<b>Compression</b>"
++msgstr "<b>ചുരുക്കുക</b>"
++
++#: ../src/nautilus-sendto.ui.h:2
++msgid "<b>Destination</b>"
++msgstr "<b>ലക്ഷ്യസ്ഥാനം</b>"
++
++#: ../src/nautilus-sendto.ui.h:4
++msgid "Send _as:"
++msgstr "അ_യക്കേണ്ടത്:"
++
++#: ../src/nautilus-sendto.ui.h:5
++msgid "Send _packed in:"
++msgstr "കെട്ടി_പ്പൂട്ടി അയക്കുക:"
++
++#: ../src/nautilus-sendto.ui.h:6
++msgid "Send t_o:"
++msgstr "_ഇതിലേക്ക് അയക്കുക:"
++
++#: ../src/nautilus-sendto.ui.h:7
++msgid "_Send"
++msgstr "_അയക്കുക"
++
++#: ../src/plugins/bluetooth/bluetooth.c:448
++msgid "Programming error, could not find the device in the list"
++msgstr "പ്രോഗ്രാമിംഗ് തകരാറ്, പട്ടികയിലെ ഉപകരണം കണ്ടെത്താന്‍ സാധിച്ചില്ല "
++
++#: ../src/plugins/bluetooth/bluetooth.c:523
++#, c-format
++msgid "Obex Push file transfer unsupported"
++msgstr "ഒബെക്സ് പുഷ് ഫയല്‍ കൈമാറ്റ സംവിധാനത്തിന് പിന്തുണയില്ല"
++
++#: ../src/plugins/bluetooth/bluetooth.c:547
++msgid "Bluetooth (OBEX Push)"
++msgstr "ബ്ലുടൂത്ത് (ഒബെക്സ് പുഷ്)"
++
++#: ../src/plugins/empathy/empathy.c:144
++msgid "The contact selected cannot receive files."
++msgstr "തെരെഞ്ഞെടുത്ത സ്വീകര്‍ത്താവിന് ഫയലുകള്‍ സ്വീകരിക്കാന്‍ സാധ്യമല്ല."
++
++#: ../src/plugins/empathy/empathy.c:150
++msgid "The contact selected is offline."
++msgstr "തെരെഞ്ഞെടുത്ത സ്വീകര്‍ത്താവ് ഓഫ്‌ലൈന്‍ ആണ്"
++
++#: ../src/plugins/empathy/empathy.c:205
++msgid "No error message"
++msgstr "തകരാറു സന്ദേശങ്ങള്‍ ഒന്നുമില്ല"
++
++#: ../src/plugins/empathy/empathy.c:281
++msgid "Instant Message (Empathy)"
++msgstr "നിമിഷ സന്ദേശം (എമ്പതി)"
++
++#: ../src/plugins/evolution/evolution.c:369
++msgid "Email"
++msgstr "ഈമെയില്‍"
++
++#: ../src/plugins/evolution/e-contact-entry.c:152
++#, c-format
++msgid "Cannot get contact: %s"
++msgstr "%s: ഈ വിലാസം ലഭിച്ചില്ല"
++
++#: ../src/plugins/evolution/e-contact-entry.c:185
++#, c-format
++msgid "Could not find contact: %s"
++msgstr "%s: ഈ വിലാസം കണ്ടെത്തിയില്ല"
++
++#: ../src/plugins/evolution/e-contact-entry.c:411
++msgid "Cannot create searchable view."
++msgstr "തെരയാന്‍ അനുയോജ്യമായ കാഴ്ച ഒരുക്കാന്‍ സാധിച്ചില്ല."
++
++#: ../src/plugins/evolution/e-contact-entry.c:883
++msgid "Success"
++msgstr "വിജയിച്ചിരിക്കുന്നു"
++
++#: ../src/plugins/evolution/e-contact-entry.c:885
++msgid "An argument was invalid."
++msgstr "ഒരു ആര്‍ഗ്യുമെന്റ് അസാധുവായിരുന്നു."
++
++#: ../src/plugins/evolution/e-contact-entry.c:887
++msgid "The address book is busy."
++msgstr "വിലാസപുസ്തകം മറ്റൊരുപയോഗത്തിലാണ്."
++
++#: ../src/plugins/evolution/e-contact-entry.c:889
++msgid "The address book is offline."
++msgstr "വിലാസപുസ്തകം ഓഫ്‌ലൈന്‍ ആണ്."
++
++#: ../src/plugins/evolution/e-contact-entry.c:891
++msgid "The address book does not exist."
++msgstr "ഈ വിലാസപുസ്തകം നിലവിലില്ല."
++
++#: ../src/plugins/evolution/e-contact-entry.c:893
++msgid "The \"Me\" contact does not exist."
++msgstr "\"Me\" എന്ന വിലാസം  നിലവിലില്ല."
++
++#: ../src/plugins/evolution/e-contact-entry.c:895
++msgid "The address book is not loaded."
++msgstr "വിലാസപുസ്തകം തുറന്നിട്ടില്ല."
++
++#: ../src/plugins/evolution/e-contact-entry.c:897
++msgid "The address book is already loaded."
++msgstr "വിലാസപുസ്തകം ഇപ്പൊഴേ നിലവിലുണ്ട്."
++
++#: ../src/plugins/evolution/e-contact-entry.c:899
++msgid "Permission was denied when accessing the address book."
++msgstr "വിലാസപുസ്തകം നോക്കുന്നതിനുള്ള അനുവാദമില്ല."
++
++#: ../src/plugins/evolution/e-contact-entry.c:901
++msgid "The contact was not found."
++msgstr "ഈ വിലാസം കണ്ടെത്തിയില്ല"
++
++#: ../src/plugins/evolution/e-contact-entry.c:903
++msgid "This contact ID already exists."
++msgstr "ഈ വിലാസത്തിന്റെ ഐഡി നിലവിലുണ്ട്."
++
++#: ../src/plugins/evolution/e-contact-entry.c:905
++msgid "The protocol is not supported."
++msgstr "ഈ പ്രോട്ടോകോള്‍ പിന്തുണയില്ലാത്തതാണ്."
++
++#: ../src/plugins/evolution/e-contact-entry.c:907
++msgid "The operation was cancelled."
++msgstr "ഈ നടപടി നിര്‍ത്തിയിരിക്കുന്നു"
++
++#: ../src/plugins/evolution/e-contact-entry.c:909
++msgid "The operation could not be cancelled."
++msgstr "ഈ നടപടി നിറുത്താന്‍ സാധ്യമല്ല"
++
++#: ../src/plugins/evolution/e-contact-entry.c:911
++msgid "The address book authentication failed."
++msgstr "വിലാസപുസ്തകത്തിലേക്കുള്ള തിരിച്ചറിയല്‍ പരിശോധന പരാജയപ്പെട്ടു"
++
++#: ../src/plugins/evolution/e-contact-entry.c:913
++msgid "Authentication is required to access the address book and was not given."
++msgstr "വിലാസപുസ്തകം പരിശോധിക്കാന്‍ ആവശ്യമായ തിരിച്ചറിയല്‍ നല്കിയിട്ടില്ല"
++
++#: ../src/plugins/evolution/e-contact-entry.c:915
++msgid "A secure connection is not available."
++msgstr "സുരക്ഷിതമായ ഒരു ബന്ധം ലഭ്യമല്ല"
++
++#: ../src/plugins/evolution/e-contact-entry.c:917
++msgid "A CORBA error occurred whilst accessing the address book."
++msgstr "വിലാസപുസ്തകം നോക്കുന്നതിനിടയില്‍ ഒരു കോര്‍ബ പിശക് സംഭവിച്ചു."
++
++#: ../src/plugins/evolution/e-contact-entry.c:919
++msgid "The address book source does not exist."
++msgstr "വിലാസപുസ്തകത്തിന്റെ ഉറവിടം നിലവിലില്ല."
++
++#: ../src/plugins/evolution/e-contact-entry.c:921
++#: ../src/plugins/evolution/e-contact-entry.c:924
++msgid "An unknown error occurred."
++msgstr "അറിയപ്പെടാത്ത എന്തോ ഒരു തെറ്റ് സംഭവിച്ചു."
++
++#: ../src/plugins/gajim/gajim.c:417
++msgid "Unable to send file"
++msgstr "ഫയല്‍ അയയ്ക്കാന്‍ പറ്റുന്നില്ല"
++
++#: ../src/plugins/gajim/gajim.c:418
++msgid "There is no connection to gajim remote service."
++msgstr "ഗാജിം വിദൂര സേവനത്തിലേയ്ക്കു് ബന്ധമൊന്നും ഇല്ല."
++
++#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
++msgid "Sending file failed"
++msgstr "ഫയല്‍ അയയ്ക്കല്‍ പരാജയപ്പെട്ടു"
++
++#: ../src/plugins/gajim/gajim.c:443
++msgid "Recipient is missing."
++msgstr "സ്വീകര്‍ത്താവിനെ നല്‍കിയിട്ടില്ല."
++
++#: ../src/plugins/gajim/gajim.c:482
++msgid "Unknown recipient."
++msgstr "അറിയപ്പെടാത്ത സ്വീകര്‍ത്താവ്"
++
++#: ../src/plugins/gajim/gajim.c:505
++msgid "Instant Message (Gajim)"
++msgstr "നിമിഷ സന്ദേശം (ഗാജിം)"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:92
++msgid "New CD/DVD"
++msgstr "പുതിയ സിഡി/ഡിവിഡി"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:99
++msgid "Existing CD/DVD"
++msgstr "നിലവിലുള്ള സിഡി/ഡിവിഡി"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:178
++msgid "CD/DVD Creator"
++msgstr "സിഡി/ഡിവിഡി നിര്‍മാതാവ്"
++
++#: ../src/plugins/pidgin/pidgin.c:464
++msgid "Instant Message (Pidgin)"
++msgstr "നിമിഷ സന്ദേശം (പിട്ഗിന്‍)"
++
++#: ../src/plugins/removable-devices/removable-devices.c:224
++msgid "Removable disks and shares"
++msgstr "ഊരി മാറ്റാവുന്ന ഡിസ്കുകളും പങ്കിട്ടവയും"
++
++#: ../src/plugins/upnp/upnp.c:309
++msgid "UPnP Media Server"
++msgstr "ആഗോള പ്ലുഗ് ആന്‍ഡ്‌ പ്ലേ (യുപിഎന്‍പി) മീഡിയ സെര്‍വര്‍"
++
+diff -urN a/po/ru.po b/po/ru.po
+--- a/po/ru.po	2010-05-06 14:40:22.090029646 +0530
++++ b/po/ru.po	2010-05-06 14:41:19.667158502 +0530
+@@ -3,14 +3,15 @@
+ #
+ # Leon Kanter <leon@asplinux.ru>, 2005.
+ # Leonid Kanter <leon@asplinux.ru>, 2008.
++# Yulia <ypoyarko@redhat.com>, 2010.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: ru\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2008-07-07 19:10+0300\n"
+-"PO-Revision-Date: 2008-07-08 14:16+0300\n"
+-"Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
+-"Language-Team: Russian <en@li.org>\n"
++"POT-Creation-Date: 2010-03-29 14:37+0530\n"
++"PO-Revision-Date: 2010-04-12 13:01\n"
++"Last-Translator: Yulia <ypoyarko@redhat.com>\n"
++"Language-Team: Russian\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -29,40 +30,33 @@
+ msgid ""
+ "Used to store which plugin was used the last time files were sent using "
+ "nautilus-sendto."
+-msgstr "Используется для сохранения использовавшегося последний раз типа архива."
++msgstr ""
++"Используется для сохранения использовавшегося в последний раз модуля для "
++"отправки файлов."
+ 
+ #: ../nst.schemas.in.h:4
+ msgid ""
+ "Used to store which type of archive was used the last time (0: zip, 1: tar."
+ "gz, 2: tar.bz2)."
+-msgstr "Используется для сохранения использовавшегося последний раз типа архива 0: zip, 1: tar.gz, 2: tar.bz2)."
++msgstr ""
++"Используется для сохранения использовавшегося в последний раз типа архива "
++"(0: zip, 1: tar.gz, 2: tar.bz2)."
+ 
+-#. type
+-#. ui requirement
+-#. flags
+-#. dependencies
+-#. priority
+-#. id
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:308
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:331
+-msgid "Nautilus Integration"
+-msgstr "Интеграция с Nautilus"
+-
+-#. name
+-#. version
+-#. summary
+-#. name
+-#. version
+-#. summary
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:310
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:311
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:333
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:334
+-msgid "Provides integration with Nautilus"
+-msgstr "Предоставляет интеграцию с Nautilus"
++#: ../evolution/nautilus-sendto.c:47
++msgid "_Send to..."
++msgstr "_Отправить..."
++
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:1
++msgid "Send files to remote devices, or people"
++msgstr "Отправить файл на внешнее устройство или людям"
++
++#. the path to the shared library
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:3
++msgid "Send to..."
++msgstr "Отправить..."
+ 
+ #: ../src/nautilus-nste.c:92 ../src/nautilus-nste.c:97
+-#: ../src/nautilus-sendto.glade.h:3
++#: ../src/nautilus-sendto.ui.h:3
+ msgid "Send To..."
+ msgstr "Отправить..."
+ 
+@@ -74,212 +68,229 @@
+ msgid "Send files by mail, instant message..."
+ msgstr "Отправить файлы по почте, в мгновенном сообщении..."
+ 
+-#: ../src/nautilus-sendto-command.c:75
+-msgid "Default folder to use"
+-msgstr "Папка, используемая по умолчанию"
+-
+-#: ../src/nautilus-sendto-command.c:533
++#: ../src/nautilus-sendto-command.c:547
+ msgid "Files"
+-msgstr "files"
++msgstr "Файлы"
+ 
+-#: ../src/nautilus-sendto-command.c:731
++#: ../src/nautilus-sendto-command.c:760
+ #, c-format
+ msgid "Expects URIs or filenames to be passed as options\n"
+ msgstr "Ожидается, что URI или имена файлов будут переданы как параметры\n"
+ 
+-#: ../src/nautilus-sendto-command.c:748
++#: ../src/nautilus-sendto-command.c:777
+ msgid "Nautilus Sendto"
+ msgstr "Nautilus Sendto"
+ 
+-#: ../src/nautilus-sendto-command.c:752
++#: ../src/nautilus-sendto-command.c:781
+ #, c-format
+ msgid "Could not parse command-line options: %s\n"
+ msgstr "Не удаётся разобрать параметры командной строки: %s\n"
+ 
+-#: ../src/nautilus-sendto-command.c:767
++#: ../src/nautilus-sendto-command.c:796
+ msgid "Could not load any plugins."
+ msgstr "Не удаётся загрузить модули."
+ 
+-#: ../src/nautilus-sendto-command.c:770
++#: ../src/nautilus-sendto-command.c:799
+ msgid "Please verify your installation"
+ msgstr "Пожалуйста, проверьте вашу установку"
+ 
+-#: ../src/nautilus-sendto.glade.h:1
++#: ../src/nautilus-sendto.ui.h:1
+ msgid "<b>Compression</b>"
+ msgstr "<b>Сжатие</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:2
++#: ../src/nautilus-sendto.ui.h:2
+ msgid "<b>Destination</b>"
+ msgstr "<b>Назначение</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:4
++#: ../src/nautilus-sendto.ui.h:4
+ msgid "Send _as:"
+ msgstr "Отправить _как:"
+ 
+-#: ../src/nautilus-sendto.glade.h:5
++#: ../src/nautilus-sendto.ui.h:5
+ msgid "Send _packed in:"
+ msgstr "_Запаковать в архив:"
+ 
+-#: ../src/nautilus-sendto.glade.h:6
++#: ../src/nautilus-sendto.ui.h:6
+ msgid "Send t_o:"
+ msgstr "К_уда:"
+ 
+-#: ../src/nautilus-sendto.glade.h:7
++#: ../src/nautilus-sendto.ui.h:7
+ msgid "_Send"
+ msgstr "_Отправить"
+ 
+-#: ../src/plugins/balsa.c:103
+-msgid "Email (Balsa)"
+-msgstr "Электронная почта (Balsa)"
+-
+-#: ../src/plugins/bluetooth.c:423
++#: ../src/plugins/bluetooth/bluetooth.c:448
+ msgid "Programming error, could not find the device in the list"
+ msgstr "Ошибка программирования: не удаётся найти устройство в списке"
+ 
+-#: ../src/plugins/bluetooth.c:444
++#: ../src/plugins/bluetooth/bluetooth.c:523
+ #, c-format
+-msgid "Device does not support Obex File Transfer"
+-msgstr "Устройство не поддерживает Obex File Transfer"
++msgid "Obex Push file transfer unsupported"
++msgstr "Передача файлов по Obex Push не поддерживается"
+ 
+-#: ../src/plugins/bluetooth.c:459
++#: ../src/plugins/bluetooth/bluetooth.c:547
+ msgid "Bluetooth (OBEX Push)"
+ msgstr "Bluetooth (OBEX Push)"
+ 
+-#: ../src/plugins/evolution.c:219
++#: ../src/plugins/empathy/empathy.c:144
++msgid "The contact selected cannot receive files."
++msgstr "Выбранный контакт не может принимать файлы."
++
++#: ../src/plugins/empathy/empathy.c:150
++msgid "The contact selected is offline."
++msgstr "Выбранный контакт неактивен."
++
++#: ../src/plugins/empathy/empathy.c:205
++msgid "No error message"
++msgstr "Отсутствуют данные об ошибке"
++
++#: ../src/plugins/empathy/empathy.c:281
++msgid "Instant Message (Empathy)"
++msgstr "Мгновенное сообщение (Empathy)"
++
++#: ../src/plugins/evolution/evolution.c:369
+ msgid "Email"
+ msgstr "Электронная почта"
+ 
+-#: ../src/plugins/e-contact-entry.c:158
++#: ../src/plugins/evolution/e-contact-entry.c:152
+ #, c-format
+ msgid "Cannot get contact: %s"
+ msgstr "Не удаётся получить контакт: %s"
+ 
+-#: ../src/plugins/e-contact-entry.c:191
++#: ../src/plugins/evolution/e-contact-entry.c:185
+ #, c-format
+ msgid "Could not find contact: %s"
+ msgstr "Не удаётся найти контакт: %s"
+ 
+-#: ../src/plugins/e-contact-entry.c:417
++#: ../src/plugins/evolution/e-contact-entry.c:411
+ msgid "Cannot create searchable view."
+-msgstr ""
++msgstr "Не удалось создать вид с поиском."
+ 
+-#: ../src/plugins/e-contact-entry.c:889
++#: ../src/plugins/evolution/e-contact-entry.c:883
+ msgid "Success"
+ msgstr "Выполнено"
+ 
+-#: ../src/plugins/e-contact-entry.c:891
++#: ../src/plugins/evolution/e-contact-entry.c:885
+ msgid "An argument was invalid."
+ msgstr "Был указан неверный аргумент."
+ 
+-#: ../src/plugins/e-contact-entry.c:893
++#: ../src/plugins/evolution/e-contact-entry.c:887
+ msgid "The address book is busy."
+ msgstr "Адресная книга занята."
+ 
+-#: ../src/plugins/e-contact-entry.c:895
++#: ../src/plugins/evolution/e-contact-entry.c:889
+ msgid "The address book is offline."
+ msgstr "Адресная книга отключена."
+ 
+-#: ../src/plugins/e-contact-entry.c:897
++#: ../src/plugins/evolution/e-contact-entry.c:891
+ msgid "The address book does not exist."
+ msgstr "Адресная книга не существует."
+ 
+-#: ../src/plugins/e-contact-entry.c:899
++#: ../src/plugins/evolution/e-contact-entry.c:893
+ msgid "The \"Me\" contact does not exist."
+ msgstr "Контакт \"Я\" не существует."
+ 
+-#: ../src/plugins/e-contact-entry.c:901
++#: ../src/plugins/evolution/e-contact-entry.c:895
+ msgid "The address book is not loaded."
+ msgstr "Адресная книга не загружена."
+ 
+-#: ../src/plugins/e-contact-entry.c:903
++#: ../src/plugins/evolution/e-contact-entry.c:897
+ msgid "The address book is already loaded."
+ msgstr "Адресная книга уже загружена."
+ 
+-#: ../src/plugins/e-contact-entry.c:905
++#: ../src/plugins/evolution/e-contact-entry.c:899
+ msgid "Permission was denied when accessing the address book."
+ msgstr "Доступ к адресной книге запрещен."
+ 
+-#: ../src/plugins/e-contact-entry.c:907
++#: ../src/plugins/evolution/e-contact-entry.c:901
+ msgid "The contact was not found."
+ msgstr "Контакт не найден."
+ 
+-#: ../src/plugins/e-contact-entry.c:909
++#: ../src/plugins/evolution/e-contact-entry.c:903
+ msgid "This contact ID already exists."
+ msgstr "ID контакта уже существует."
+ 
+-#: ../src/plugins/e-contact-entry.c:911
++#: ../src/plugins/evolution/e-contact-entry.c:905
+ msgid "The protocol is not supported."
+ msgstr "Протокол не поддерживается."
+ 
+-#: ../src/plugins/e-contact-entry.c:913
++#: ../src/plugins/evolution/e-contact-entry.c:907
+ msgid "The operation was cancelled."
+ msgstr "Операция была отменена."
+ 
+-#: ../src/plugins/e-contact-entry.c:915
++#: ../src/plugins/evolution/e-contact-entry.c:909
+ msgid "The operation could not be cancelled."
+ msgstr "Операция не может быть отменена."
+ 
+-#: ../src/plugins/e-contact-entry.c:917
++#: ../src/plugins/evolution/e-contact-entry.c:911
+ msgid "The address book authentication failed."
+ msgstr "Ошибка аутентификации адресной книги."
+ 
+-#: ../src/plugins/e-contact-entry.c:919
++#: ../src/plugins/evolution/e-contact-entry.c:913
+ msgid "Authentication is required to access the address book and was not given."
+ msgstr "Для доступа к адресной книге требуется аутентификация."
+ 
+-#: ../src/plugins/e-contact-entry.c:921
++#: ../src/plugins/evolution/e-contact-entry.c:915
+ msgid "A secure connection is not available."
+ msgstr "Безопасное соединение недоступно."
+ 
+-#: ../src/plugins/e-contact-entry.c:923
++#: ../src/plugins/evolution/e-contact-entry.c:917
+ msgid "A CORBA error occurred whilst accessing the address book."
+ msgstr "При доступе к адресной книге произошла ошибка CORBA."
+ 
+-#: ../src/plugins/e-contact-entry.c:925
++#: ../src/plugins/evolution/e-contact-entry.c:919
+ msgid "The address book source does not exist."
+ msgstr "Источник адресной книги не существует."
+ 
+-#: ../src/plugins/e-contact-entry.c:927 ../src/plugins/e-contact-entry.c:930
++#: ../src/plugins/evolution/e-contact-entry.c:921
++#: ../src/plugins/evolution/e-contact-entry.c:924
+ msgid "An unknown error occurred."
+ msgstr "Произошла неизвестная ошибка."
+ 
+-#: ../src/plugins/gaim.c:228
+-msgid "Instant Message (Gaim)"
+-msgstr "Мгновенное сообщение (Gaim)"
+-
+-#: ../src/plugins/gajim.c:402
++#: ../src/plugins/gajim/gajim.c:417
+ msgid "Unable to send file"
+ msgstr "Не удалось отправить файл"
+ 
+-#: ../src/plugins/gajim.c:403
++#: ../src/plugins/gajim/gajim.c:418
+ msgid "There is no connection to gajim remote service."
+ msgstr "Нет соединения с сервисом gajim."
+ 
+-#: ../src/plugins/gajim.c:427 ../src/plugins/gajim.c:466
++#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
+ msgid "Sending file failed"
+ msgstr "Сбой отправки файла"
+ 
+-#: ../src/plugins/gajim.c:428
++#: ../src/plugins/gajim/gajim.c:443
+ msgid "Recipient is missing."
+ msgstr "Не указан получатель."
+ 
+-#: ../src/plugins/gajim.c:466
++#: ../src/plugins/gajim/gajim.c:482
+ msgid "Unknown recipient."
+ msgstr "Неизвестный получатель."
+ 
+-#: ../src/plugins/gajim.c:488
++#: ../src/plugins/gajim/gajim.c:505
+ msgid "Instant Message (Gajim)"
+ msgstr "Мгновенное сообщение (Gajim)"
+ 
+-#: ../src/plugins/pidgin.c:239
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:92
++msgid "New CD/DVD"
++msgstr "Новый CD/DVD"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:99
++msgid "Existing CD/DVD"
++msgstr "Существующий CD/DVD"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:178
++msgid "CD/DVD Creator"
++msgstr "Создание CD/DVD"
++
++#: ../src/plugins/pidgin/pidgin.c:464
+ msgid "Instant Message (Pidgin)"
+ msgstr "Мгновенное сообщение (Pidgin)"
+ 
+-#: ../src/plugins/sylpheed-claws.c:131
+-msgid "Email (Claws Mail)"
+-msgstr "Электронная почта (Claws Mail)"
+-
+-#: ../src/plugins/thunderbird.c:105
+-msgid "Email (Thunderbird)"
+-msgstr "Электронная поча (Thunderbird)"
++#: ../src/plugins/removable-devices/removable-devices.c:224
++msgid "Removable disks and shares"
++msgstr "Сменные диски и общие папки"
++
++#: ../src/plugins/upnp/upnp.c:309
++msgid "UPnP Media Server"
++msgstr "Медиа-сервер UPnP"
+ 
+diff -urN a/po/ta.po b/po/ta.po
+--- a/po/ta.po	2010-05-06 14:40:22.092029523 +0530
++++ b/po/ta.po	2010-05-06 14:41:22.135066882 +0530
+@@ -4,20 +4,21 @@
+ # This file is distributed under the same license as the nautilus-sendto package.
+ #
+ # ifelix <ifelix25@gmail.com>, 2009.
+-# I. Felix <ifelix@redhat.com>, 2009.
++# I. Felix <ifelix@redhat.com>, 2009, 2010.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: nautilus-sendto.po.master.ta\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=nautilus-sendto&component=general\n"
+-"POT-Creation-Date: 2009-06-25 18:28+0000\n"
+-"PO-Revision-Date: 2009-07-02 08:04+0530\n"
+-"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+-"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:37+0530\n"
++"PO-Revision-Date: 2010-04-15 16:52+0530\n"
++"Last-Translator: \n"
++"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Generator: KBabel 1.11.4\n"
+-"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
++"X-Generator: Lokalize 1.0\n"
++"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
++"\n"
+ "\n"
+ "\n"
+ 
+@@ -33,7 +34,9 @@
+ msgid ""
+ "Used to store which plugin was used the last time files were sent using "
+ "nautilus-sendto."
+-msgstr "nautilus-sendtoஐ பயன்படுத்தி அனுப்பப்பட்ட கடைசி முறை கோபுக்கள் கூடுதல் இணைப்புகளை சேமிக்க பயன்படுத்தப்பட்டன."
++msgstr ""
++"nautilus-sendtoஐ பயன்படுத்தி அனுப்பப்பட்ட கடைசி முறை கோபுக்கள் கூடுதல் இணைப்புகளை "
++"சேமிக்க பயன்படுத்தப்பட்டன."
+ 
+ #: ../nst.schemas.in.h:4
+ msgid ""
+@@ -56,26 +59,8 @@
+ msgid "Send to..."
+ msgstr "இதற்கு அனுப்பு..."
+ 
+-#. type
+-#. ui requirement
+-#. flags
+-#. dependencies
+-#. priority
+-#. id
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:342
+-msgid "Nautilus Integration"
+-msgstr "Nautilus ஒருங்கினைத்தல்"
+-
+-#. name
+-#. version
+-#. summary
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:344
+-#: ../pidgin_plugin/nautilus-sendto-plugin.c:345
+-msgid "Provides integration with Nautilus"
+-msgstr "Nautilus உடன் ஒருங்கினைப்பை தருகிறது "
+-
+ #: ../src/nautilus-nste.c:92 ../src/nautilus-nste.c:97
+-#: ../src/nautilus-sendto.glade.h:3
++#: ../src/nautilus-sendto.ui.h:3
+ msgid "Send To..."
+ msgstr "இதற்கு அனுப்பு..."
+ 
+@@ -87,53 +72,53 @@
+ msgid "Send files by mail, instant message..."
+ msgstr "கோப்புகளை மின்னஞ்சலில், துரித செய்தியில் அனுப்பவும்..."
+ 
+-#: ../src/nautilus-sendto-command.c:540
++#: ../src/nautilus-sendto-command.c:547
+ msgid "Files"
+ msgstr "கோப்புகள்"
+ 
+-#: ../src/nautilus-sendto-command.c:744
++#: ../src/nautilus-sendto-command.c:760
+ #, c-format
+ msgid "Expects URIs or filenames to be passed as options\n"
+ msgstr "URIகள் மற்றும் கோப்பு பெயர்கள் தவிர விருப்பங்களாக அனுப்பப்பட வேண்டும்\n"
+ 
+-#: ../src/nautilus-sendto-command.c:761
++#: ../src/nautilus-sendto-command.c:777
+ msgid "Nautilus Sendto"
+ msgstr "Nautilus Sendto"
+ 
+-#: ../src/nautilus-sendto-command.c:765
++#: ../src/nautilus-sendto-command.c:781
+ #, c-format
+ msgid "Could not parse command-line options: %s\n"
+ msgstr "கட்டளைவரி வாய்ப்புகளை பகுக்க முடியவில்லை: %s\n"
+ 
+-#: ../src/nautilus-sendto-command.c:780
++#: ../src/nautilus-sendto-command.c:796
+ msgid "Could not load any plugins."
+ msgstr "கூடுதல் இணைப்புகள் எதையும் ஏற்ற முடியவில்லை."
+ 
+-#: ../src/nautilus-sendto-command.c:783
++#: ../src/nautilus-sendto-command.c:799
+ msgid "Please verify your installation"
+ msgstr "உங்களது நிறுவலை சரிபார்க்கவும்"
+ 
+-#: ../src/nautilus-sendto.glade.h:1
++#: ../src/nautilus-sendto.ui.h:1
+ msgid "<b>Compression</b>"
+-msgstr "<b>Compression</b>"
++msgstr "<b>குறுக்கம்</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:2
++#: ../src/nautilus-sendto.ui.h:2
+ msgid "<b>Destination</b>"
+ msgstr "<b>இலக்கு</b>"
+ 
+-#: ../src/nautilus-sendto.glade.h:4
++#: ../src/nautilus-sendto.ui.h:4
+ msgid "Send _as:"
+ msgstr "இதுவாக அனுப்பு (_a):"
+ 
+-#: ../src/nautilus-sendto.glade.h:5
++#: ../src/nautilus-sendto.ui.h:5
+ msgid "Send _packed in:"
+ msgstr "தொகுப்பிற்குள் அனுப்பு (_p):"
+ 
+-#: ../src/nautilus-sendto.glade.h:6
++#: ../src/nautilus-sendto.ui.h:6
+ msgid "Send t_o:"
+ msgstr "இதற்கு அனுப்பு (_o):"
+ 
+-#: ../src/nautilus-sendto.glade.h:7
++#: ../src/nautilus-sendto.ui.h:7
+ msgid "_Send"
+ msgstr "அனுப்பு (_S)"
+ 
+@@ -150,23 +135,23 @@
+ msgid "Bluetooth (OBEX Push)"
+ msgstr "ஃப்ளூடூத் (OBEX Push)"
+ 
+-#: ../src/plugins/empathy/empathy.c:130
++#: ../src/plugins/empathy/empathy.c:144
+ msgid "The contact selected cannot receive files."
+ msgstr "தேர்ந்தெடுக்கப்பட்ட தொடர்பு கோப்புகளை பெறவில்லை."
+ 
+-#: ../src/plugins/empathy/empathy.c:136
++#: ../src/plugins/empathy/empathy.c:150
+ msgid "The contact selected is offline."
+ msgstr "தேர்ந்தெடுக்கப்பட்ட இணைப்பு ஆஃப்லைனில் உள்ளது."
+ 
+-#: ../src/plugins/empathy/empathy.c:193
++#: ../src/plugins/empathy/empathy.c:205
+ msgid "No error message"
+ msgstr "பிழை செய்தி இல்லை"
+ 
+-#: ../src/plugins/empathy/empathy.c:269
++#: ../src/plugins/empathy/empathy.c:281
+ msgid "Instant Message (Empathy)"
+ msgstr "துரித செய்தி (எம்பதி)"
+ 
+-#: ../src/plugins/evolution/evolution.c:366
++#: ../src/plugins/evolution/evolution.c:369
+ msgid "Email"
+ msgstr "மின்னஞ்சல்"
+ 
+@@ -265,44 +250,43 @@
+ msgid "An unknown error occurred."
+ msgstr "ஒரு தெரியாத பிழை ஏற்பட்டது."
+ 
+-#: ../src/plugins/gajim/gajim.c:403
++#: ../src/plugins/gajim/gajim.c:417
+ msgid "Unable to send file"
+ msgstr "கோப்பினை அனுப்ப முடியவில்லை"
+ 
+-#: ../src/plugins/gajim/gajim.c:404
++#: ../src/plugins/gajim/gajim.c:418
+ msgid "There is no connection to gajim remote service."
+ msgstr "gajim தொலை சேவையுடன் இணைப்பு இல்லை."
+ 
+-#: ../src/plugins/gajim/gajim.c:428 ../src/plugins/gajim/gajim.c:467
++#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
+ msgid "Sending file failed"
+ msgstr "கோப்பை அனுப்புவது தோல்வியுற்றது"
+ 
+-#: ../src/plugins/gajim/gajim.c:429
++#: ../src/plugins/gajim/gajim.c:443
+ msgid "Recipient is missing."
+ msgstr "பெறுநர் விடுபட்டுவிட்டார்."
+ 
+-#: ../src/plugins/gajim/gajim.c:467
++#: ../src/plugins/gajim/gajim.c:482
+ msgid "Unknown recipient."
+ msgstr "தெரியாத பெறுநர்."
+ 
+-#: ../src/plugins/gajim/gajim.c:489
++#: ../src/plugins/gajim/gajim.c:505
+ msgid "Instant Message (Gajim)"
+ msgstr "துரித செய்தி (Gajim)"
+ 
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:73
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:88
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:92
+ msgid "New CD/DVD"
+ msgstr "புதிய CD/DVD"
+ 
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:86
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:99
+ msgid "Existing CD/DVD"
+ msgstr "இருக்கும் CD/DVD"
+ 
+-#: ../src/plugins/nautilus-burn/nautilus-burn.c:165
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:178
+ msgid "CD/DVD Creator"
+ msgstr "குறுவட்டு/DVD உருவாக்கி"
+ 
+-#: ../src/plugins/pidgin/pidgin.c:353
++#: ../src/plugins/pidgin/pidgin.c:464
+ msgid "Instant Message (Pidgin)"
+ msgstr "துரித செய்தி (Pidgin)"
+ 
+@@ -310,7 +294,12 @@
+ msgid "Removable disks and shares"
+ msgstr "நீக்ககூடிய வட்டுகள்  மற்றும் பகிர்வுகள்"
+ 
+-#: ../src/plugins/upnp/upnp.c:301
++#: ../src/plugins/upnp/upnp.c:309
+ msgid "UPnP Media Server"
+ msgstr "UPnP ஊடக சேவையம்"
+ 
++#~ msgid "Nautilus Integration"
++#~ msgstr "Nautilus ஒருங்கினைத்தல்"
++
++#~ msgid "Provides integration with Nautilus"
++#~ msgstr "Nautilus உடன் ஒருங்கினைப்பை தருகிறது "
+diff -urN a/po/zh_TW.po b/po/zh_TW.po
+--- a/po/zh_TW.po	2010-05-06 14:40:22.094029824 +0530
++++ b/po/zh_TW.po	2010-05-06 14:41:20.440717896 +0530
+@@ -1,109 +1,292 @@
++# translation of nautilus-sendto-zh_TW.po to Traditional Chinese
+ # traditional Chinese translation of nautilus-sendto.
+-# Copyright (C) 2005 Free Software Foundation, Inc.
+-# Abel Cheung <abel@oaka.org>, 2005.
++# Copyright (C) 2005, 2010 Free Software Foundation, Inc.
+ #
++# Abel Cheung <abel@oaka.org>, 2005.
++# Chester Cheng <ccheng 於 redhat>, 2010.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: nautilus-sendto 0.3\n"
++"Project-Id-Version: nautilus-sendto-zh_TW\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2005-03-05 08:41+0800\n"
+-"PO-Revision-Date: 2005-03-05 08:58+0800\n"
+-"Last-Translator: Abel Cheung <abel@oaka.org>\n"
+-"Language-Team: Chinese (traditional) <community@linuxhall.org>\n"
++"POT-Creation-Date: 2010-03-29 14:37+0530\n"
++"PO-Revision-Date: 2010-04-15 16:06+1000\n"
++"Last-Translator: Chester Cheng <ccheng 於 redhat>\n"
++"Language-Team: Traditional Chinese <zh_TW@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 1.11.4\n"
+ 
+-#. type
+-#. ui requirement
+-#. flags
+-#. dependencies
+-#. priority
+-#. id
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:303
+-msgid "Nautilus Integration"
+-msgstr "Nautilus 整合"
+-
+-#. name
+-#. version
+-#. summary
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:305
+-#: ../gaim_plugin/nautilus-sendto-plugin.c:306
+-msgid "Provides integration with Nautilus"
+-msgstr "提供和 Nautilus 整合的功能"
+-
+-#: ../src/nautilus-sendto-command.c:57
+-msgid "Default folder to use"
+-msgstr "指定預設資料夾"
+-
+-#: ../src/nautilus-sendto-command.c:58
+-msgid "FOLDER"
+-msgstr "資料夾"
+-
+-# (Abel) package name = compressed package file name
+-#: ../src/nautilus-sendto-command.c:127
+-msgid "You don't insert the package name"
+-msgstr "您還未輸入壓縮檔的名稱"
++#: ../nst.schemas.in.h:1
++msgid "Last plugin used to send"
++msgstr "要發送的最後使用的外掛程式"
+ 
+-#: ../src/nautilus-sendto-command.c:287
+-msgid "Files"
+-msgstr "檔案"
++#: ../nst.schemas.in.h:2
++msgid "Last type of archive used"
++msgstr "最後使用的備份類型"
+ 
+-#: ../src/nautilus-sendto-command.c:425
+-msgid "Nautilus Sendto"
+-msgstr "Nautilus 傳送檔案"
++#: ../nst.schemas.in.h:3
++msgid ""
++"Used to store which plugin was used the last time files were sent using "
++"nautilus-sendto."
++msgstr "用來儲存最後一次檔案透過 nautilus-sendto 發送時，使用的是哪個外掛程式。"
+ 
+-#: ../src/nautilus-sendto-force.glade.h:1 ../src/nautilus-sendto.glade.h:2
++#: ../nst.schemas.in.h:4
+ msgid ""
+-".zip\n"
+-".tar.gz\n"
+-".tar.bz2"
+-msgstr ""
+-".zip\n"
+-".tar.gz\n"
+-".tar.bz2"
++"Used to store which type of archive was used the last time (0: zip, 1: tar."
++"gz, 2: tar.bz2)."
++msgstr "用來儲存最後一次使用的備份類型（0: zip, 1: tar.gz, 2: tar.bz2）。"
++
++#: ../evolution/nautilus-sendto.c:47
++msgid "_Send to..."
++msgstr "傳送到(_S)..."
++
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:1
++msgid "Send files to remote devices, or people"
++msgstr "發送檔案到遠端裝置上，或發給其他人"
+ 
+-#: ../src/nautilus-sendto-force.glade.h:4 ../src/nautilus-sendto.glade.h:5
+-msgid "Send To..."
++#. the path to the shared library
++#: ../evolution/org-gnome-evolution-send-attachments-to.eplug.xml.h:3
++msgid "Send to..."
+ msgstr "傳送到..."
+ 
+-# (Abel) 和原文有很大出入，但用家應該會較容易明白
+-#: ../src/nautilus-sendto-force.glade.h:5 ../src/nautilus-sendto.glade.h:6
+-msgid "Send as:"
+-msgstr "傳送格式："
+-
+-#: ../src/nautilus-sendto-force.glade.h:6 ../src/nautilus-sendto.glade.h:7
+-msgid "Send packed in"
+-msgstr "將檔案壓縮成"
+-
+-#: ../src/nautilus-sendto-force.glade.h:7 ../src/nautilus-sendto.glade.h:8
+-msgid "Send to:"
+-msgstr "傳送到："
+-
+-#: ../src/nautilus-sendto-force.glade.h:8 ../src/nautilus-sendto.glade.h:9
+-msgid "_Send"
+-msgstr "傳送(_S)"
+-
+-#: ../src/nautilus-sendto.glade.h:1
+-msgid "*"
+-msgstr "*"
+-
+-#: ../src/nautilus-nste.c:108 ../src/nautilus-nste.c:123
+-msgid "Send to..."
++#: ../src/nautilus-nste.c:92 ../src/nautilus-nste.c:97
++#: ../src/nautilus-sendto.ui.h:3
++msgid "Send To..."
+ msgstr "傳送到..."
+ 
+-#: ../src/nautilus-nste.c:109
++#: ../src/nautilus-nste.c:93
+ msgid "Send file by mail, instant message..."
+ msgstr "經電子郵件、即時訊息等等途徑傳送檔案"
+ 
+-#: ../src/nautilus-nste.c:124
++#: ../src/nautilus-nste.c:98
+ msgid "Send files by mail, instant message..."
+ msgstr "經電子郵件、即時訊息等等途徑傳送檔案"
+ 
+-#: ../src/plugins/evolution.c:229
++#: ../src/nautilus-sendto-command.c:547
++msgid "Files"
++msgstr "檔案"
++
++#: ../src/nautilus-sendto-command.c:760
++#, c-format
++msgid "Expects URIs or filenames to be passed as options\n"
++msgstr "預期的傳送選項為 URI 或檔名\n"
++
++#: ../src/nautilus-sendto-command.c:777
++msgid "Nautilus Sendto"
++msgstr "Nautilus 傳送檔案"
++
++#: ../src/nautilus-sendto-command.c:781
++#, c-format
++msgid "Could not parse command-line options: %s\n"
++msgstr "無法解析命令列選項：%s\n"
++
++#: ../src/nautilus-sendto-command.c:796
++msgid "Could not load any plugins."
++msgstr "無法載入任何外掛程式。"
++
++#: ../src/nautilus-sendto-command.c:799
++msgid "Please verify your installation"
++msgstr "請驗證您的安裝。"
++
++#: ../src/nautilus-sendto.ui.h:1
++msgid "<b>Compression</b>"
++msgstr "<b>壓縮</b>"
++
++#: ../src/nautilus-sendto.ui.h:2
++msgid "<b>Destination</b>"
++msgstr "<b>目的地</b>"
++
++# (Abel) 和原文有很大出入，但用家應該會較容易明白
++#: ../src/nautilus-sendto.ui.h:4
++msgid "Send _as:"
++msgstr "傳送格式(_a)："
++
++#: ../src/nautilus-sendto.ui.h:5
++msgid "Send _packed in:"
++msgstr "傳送前將檔案壓縮成(_p):"
++
++#: ../src/nautilus-sendto.ui.h:6
++msgid "Send t_o:"
++msgstr "傳送到(_o)："
++
++#: ../src/nautilus-sendto.ui.h:7
++msgid "_Send"
++msgstr "傳送(_S)"
++
++#: ../src/plugins/bluetooth/bluetooth.c:448
++msgid "Programming error, could not find the device in the list"
++msgstr "程式錯誤，清單中找不到裝置"
++
++#: ../src/plugins/bluetooth/bluetooth.c:523
++#, c-format
++msgid "Obex Push file transfer unsupported"
++msgstr "不支援 Obex Push 檔案傳輸"
++
++#: ../src/plugins/bluetooth/bluetooth.c:547
++msgid "Bluetooth (OBEX Push)"
++msgstr "藍牙 (OBEX Push)"
++
++#: ../src/plugins/empathy/empathy.c:144
++msgid "The contact selected cannot receive files."
++msgstr "所選擇的通訊名單無法接收檔案。"
++
++#: ../src/plugins/empathy/empathy.c:150
++msgid "The contact selected is offline."
++msgstr "選擇的通訊名單處於離線狀態。"
++
++#: ../src/plugins/empathy/empathy.c:205
++msgid "No error message"
++msgstr "沒有錯誤訊息"
++
++#: ../src/plugins/empathy/empathy.c:281
++msgid "Instant Message (Empathy)"
++msgstr "即時訊息 (Empathy)"
++
++#: ../src/plugins/evolution/evolution.c:369
+ msgid "Email"
+ msgstr "電子郵件"
+ 
+-#: ../src/plugins/gaim.c:219
+-msgid "Instant Message (Gaim)"
+-msgstr "即時訊息 (Gaim)"
++#: ../src/plugins/evolution/e-contact-entry.c:152
++#, c-format
++msgid "Cannot get contact: %s"
++msgstr "無法取得通訊名單：%s"
++
++#: ../src/plugins/evolution/e-contact-entry.c:185
++#, c-format
++msgid "Could not find contact: %s"
++msgstr "找不到通訊名單：%s"
++
++#: ../src/plugins/evolution/e-contact-entry.c:411
++msgid "Cannot create searchable view."
++msgstr "無法建立可搜尋的檢視方式。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:883
++msgid "Success"
++msgstr "成功"
++
++#: ../src/plugins/evolution/e-contact-entry.c:885
++msgid "An argument was invalid."
++msgstr "有一項無效的參數。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:887
++msgid "The address book is busy."
++msgstr "位址簿忙碌中。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:889
++msgid "The address book is offline."
++msgstr "位址簿處於離線狀態。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:891
++msgid "The address book does not exist."
++msgstr "位址簿不存在。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:893
++msgid "The \"Me\" contact does not exist."
++msgstr "「Me」通訊名單不存在。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:895
++msgid "The address book is not loaded."
++msgstr "位址簿沒有載入。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:897
++msgid "The address book is already loaded."
++msgstr "位址簿已經被載入了。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:899
++msgid "Permission was denied when accessing the address book."
++msgstr "存取位址簿時，存取被拒。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:901
++msgid "The contact was not found."
++msgstr "找不到聯絡名單。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:903
++msgid "This contact ID already exists."
++msgstr "聯絡 ID 已經存在。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:905
++msgid "The protocol is not supported."
++msgstr "不支援此通訊協定。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:907
++msgid "The operation was cancelled."
++msgstr "操作被取消。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:909
++msgid "The operation could not be cancelled."
++msgstr "操作無法被取消。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:911
++msgid "The address book authentication failed."
++msgstr "位址簿認證失敗。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:913
++msgid "Authentication is required to access the address book and was not given."
++msgstr "要存取位址簿，需要身份認證；但並未給予身份認證的資訊。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:915
++msgid "A secure connection is not available."
++msgstr "無法建立安全的連線方式。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:917
++msgid "A CORBA error occurred whilst accessing the address book."
++msgstr "存取位址簿時，發生 CORBA 錯誤。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:919
++msgid "The address book source does not exist."
++msgstr "位址簿來源不存在。"
++
++#: ../src/plugins/evolution/e-contact-entry.c:921
++#: ../src/plugins/evolution/e-contact-entry.c:924
++msgid "An unknown error occurred."
++msgstr "發生未知的錯誤。"
++
++#: ../src/plugins/gajim/gajim.c:417
++msgid "Unable to send file"
++msgstr "無法發送檔案"
++
++#: ../src/plugins/gajim/gajim.c:418
++msgid "There is no connection to gajim remote service."
++msgstr "gajim 遠端服務並未連線。"
++
++#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
++msgid "Sending file failed"
++msgstr "發送檔案失敗"
++
++#: ../src/plugins/gajim/gajim.c:443
++msgid "Recipient is missing."
++msgstr "沒有收件者。"
++
++#: ../src/plugins/gajim/gajim.c:482
++msgid "Unknown recipient."
++msgstr "未知的收件者。"
++
++#: ../src/plugins/gajim/gajim.c:505
++msgid "Instant Message (Gajim)"
++msgstr "即時訊息 (Gajim)"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:92
++msgid "New CD/DVD"
++msgstr "新的 CD/DVD"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:99
++msgid "Existing CD/DVD"
++msgstr "現有的 CD/DVD"
++
++#: ../src/plugins/nautilus-burn/nautilus-burn.c:178
++msgid "CD/DVD Creator"
++msgstr "CD/DVD 建立程式"
++
++#: ../src/plugins/pidgin/pidgin.c:464
++msgid "Instant Message (Pidgin)"
++msgstr "即時訊息 (Pidgin)"
++
++#: ../src/plugins/removable-devices/removable-devices.c:224
++msgid "Removable disks and shares"
++msgstr "可抹寫光碟與共享空間"
++
++#: ../src/plugins/upnp/upnp.c:309
++msgid "UPnP Media Server"
++msgstr "UPnP 媒體伺服器"
++
